@@ -110,7 +110,9 @@ else {
 
 ajax_status.onreadystatechange = function() {
   if(ajax_status.readyState == 4 && ajax_status.status == 200) {
-
+    document.getElementById("led").disabled = false;
+      document.getElementById("led").value = "LED";
+      document.getElementById("led").onclick = function(){alert("LED ON! Shutdown..."); sys_shutdown();}
     if(ajax_status.responseText == "ready") {
       document.getElementById("video_button").disabled = false;
       document.getElementById("video_button").value = "record video start";

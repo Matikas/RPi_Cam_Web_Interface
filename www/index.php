@@ -23,6 +23,9 @@
 
     <div class="container-fluid text-center liveimage">
       <div><img id="mjpeg_dest" onclick="toggle_fullscreen(this);"></div>
+        <div class="container-fluid">
+            <input id="led" type="button" class="btn btn-warning">
+        </div>
       <input id="video_button" type="button" class="btn btn-primary">
       <input id="image_button" type="button" class="btn btn-primary">
       <input id="timelapse_button" type="button" class="btn btn-primary">
